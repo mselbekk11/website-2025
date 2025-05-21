@@ -2,10 +2,11 @@ import Link from 'next/link';
 import ExperimentCard from '@/app/components/experiment-card';
 import Logo from '@/app/components/logo';
 import PatternBackground from '@/app/components/pattern-background';
+import LogoOne from './components/logo-one';
 
 export default function Home() {
   return (
-    <div className='min-h-screen bg-[#0A0A0A] text-white relative'>
+    <div className='min-h-screen bg-[#0D0D0D] text-white relative'>
       {/* Background noise effect */}
       <div
         className='fixed inset-0 z-10 pointer-events-none opacity-5'
@@ -43,9 +44,10 @@ export default function Home() {
         </div>
 
         {/* Desktop logo */}
-        <div className='hidden md:flex col-start-2 row-span-full pt-[50px] justify-center items-start relative z-20'>
+        <div className='hidden md:flex col-start-2 row-span-full pt-[52px] justify-center items-start relative z-20'>
           <Link href='#top' className='focus:ring sticky top-[34px] mb-10'>
-            <Logo />
+            {/* <Logo /> */}
+            <LogoOne />
           </Link>
         </div>
 
@@ -69,7 +71,7 @@ export default function Home() {
         </header>
 
         {/* Desktop CTA */}
-        <div className='hidden md:flex col-start-4 row-span-full pt-[50px] justify-center items-start relative z-20'>
+        <div className='hidden md:flex col-start-4 row-span-full pt-[52px] justify-center items-start relative z-20'>
           <Link
             href='#hire-me'
             className='btn relative px-4 py-2 border border-gray-500/20 rounded-full focus:ring sticky top-[34px] mb-10 z-[3]'
