@@ -55,15 +55,6 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Availability indicator */
-[data-availability='off'] .show-if-available {
-  display: none;
-}
-
-[data-availability='on'] .show-if-not-available {
-  display: none;
-}
-
 .sticky {
   position: sticky;
 }
