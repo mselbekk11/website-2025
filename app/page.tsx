@@ -65,17 +65,6 @@ export default function Home() {
                 — a product designer specialized in web apps.
               </span>
             </h1>
-
-            {/* <Link
-              href='#hire-me'
-              className='btn relative px-4 py-2 border border-gray-500/20 rounded-full focus:ring md:hidden'
-            >
-              Hire Me
-              <span
-                className='absolute right-2 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-red-500'
-                aria-hidden='true'
-              ></span>
-            </Link> */}
           </div>
         </header>
 
@@ -86,10 +75,6 @@ export default function Home() {
             className='btn relative px-4 py-2 border border-gray-500/20 rounded-full focus:ring sticky top-[34px] mb-10 z-[3]'
           >
             Hire Me
-            <span
-              className='absolute right-2 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-red-500'
-              aria-hidden='true'
-            ></span>
           </Link>
         </div>
 
