@@ -23,10 +23,12 @@ export default function Home() {
         <div className='md:max-w-[1104px] md:mx-auto'>
           <div className='translate-y-[-90px]'>
             <div
-              className='w-[740px] h-[180px] bg-white rounded-full rotate-45 -translate-x-[300px] -translate-y-[300px] origin-left-center blur-[150px] opacity-8 
+              className='w-[800px] h-[320px] bg-white/25 rounded-full rotate-45 -translate-x-[300px] -translate-y-[300px] origin-left-center blur-[120px] opacity-50
                         sm:-translate-x-[200px] sm:-translate-y-[300px] 
                         md:-translate-x-[150px] md:-translate-y-[200px]'
             ></div>
+            {/* Additional light element for more effect */}
+            <div className='w-[600px] h-[180px] bg-blue-200/20 rounded-full rotate-[30deg] -translate-x-[250px] -translate-y-[350px] origin-left-center blur-[140px] opacity-40'></div>
           </div>
         </div>
       </div>
@@ -62,19 +64,19 @@ export default function Home() {
             </Link>
 
             <h1 className='text-balance text-center leading-[1.4]'>
-              Welcome to the digital lab of Sebastiano Guerriero
+              Morgan Selbekk
               <span className='opacity-40 sm:block'>
-                — a product designer specialized in web apps.
+                Full Stack Developer & Designer
               </span>
             </h1>
           </div>
         </header>
 
         {/* Desktop CTA */}
-        <div className='hidden md:flex col-start-4 row-span-full pt-[52px] justify-center items-start relative z-20'>
+        <div className='hidden md:flex col-start-4 row-span-full pt-[52px] justify-center items-start z-20'>
           <Link
             href='#hire-me'
-            className='btn relative px-4 py-2 border border-gray-500/20 rounded-full focus:ring sticky top-[34px] mb-10 z-[3]'
+            className='btn px-4 py-2 border border-gray-500/20 rounded-full focus:ring sticky top-[34px] mb-10 z-[3] bg-gray-500/20'
           >
             Hire Me
           </Link>
@@ -86,7 +88,7 @@ export default function Home() {
             <ExperimentCard
               key={index}
               id={`ui-experiment-${index + 1}`}
-              title={`UI Experiment #${String(index + 1).padStart(2, '0')}`}
+              title={experiment.title}
               image={experiment.image}
               icons={experiment.icons}
               fonts={experiment.fonts}
@@ -237,59 +239,69 @@ const experiments = [
     icons: 'Nucleo',
     fonts: 'Geist + Geist Mono',
     colors: ['#111111', '#B3B3B3', '#BA965A'],
+    title: 'Trizzy',
   },
   {
     image: '/placeholder.svg?height=540&width=540',
     icons: 'Nucleo',
     fonts: 'Geist Mono',
     colors: ['#FFFFFF', '#868F9F', '#202124'],
+    title: 'Trizzy',
   },
   {
     image: '/placeholder.svg?height=540&width=540',
     icons: 'Nucleo',
     fonts: 'Inter',
     colors: ['#1A1917', '#5E5E55', '#DFDFDC', '#7A8FF7'],
+    title: 'Trizzy',
   },
-  {
-    image: '/placeholder.svg?height=540&width=540',
-    icons: 'Nucleo',
-    fonts: 'Geist',
-    colors: ['#F9F5FF', '#19181B', '#EE4169'],
-  },
-  {
-    image: '/placeholder.svg?height=540&width=540',
-    icons: 'Nucleo',
-    fonts: 'Geist',
-    colors: ['#FFFFFF', '#8A8A8F', '#070708', '#B2E071'],
-  },
-  {
-    image: '/placeholder.svg?height=540&width=540',
-    icons: 'Nucleo',
-    fonts: 'SF Pro',
-    colors: ['#FFFFFF', '#99A1A8', '#090909'],
-  },
-  {
-    image: '/placeholder.svg?height=540&width=540',
-    icons: 'Nucleo',
-    fonts: 'Geist',
-    colors: ['#191919', '#636363', '#D6D6D6', '#DA4167'],
-  },
-  {
-    image: '/placeholder.svg?height=540&width=540',
-    icons: 'Nucleo',
-    fonts: 'Open Runde',
-    colors: ['#2684FC', '#DCE2EF', '#1F1F1F'],
-  },
-  {
-    image: '/placeholder.svg?height=540&width=540',
-    icons: 'Nucleo',
-    fonts: 'Geist Mono',
-    colors: ['#09BC8A', '#F4F7F5', '#919793', '#0A0B0C'],
-  },
-  {
-    image: '/placeholder.svg?height=540&width=540',
-    icons: 'Nucleo',
-    fonts: 'Inter',
-    colors: ['#F67E7D', '#CDD0D5', '#958CAF', '#0B032D'],
-  },
+  // {
+  //   image: '/placeholder.svg?height=540&width=540',
+  //   icons: 'Nucleo',
+  //   fonts: 'Geist',
+  //   colors: ['#F9F5FF', '#19181B', '#EE4169'],
+  //   title: 'Trizzy',
+  // },
+  // {
+  //   image: '/placeholder.svg?height=540&width=540',
+  //   icons: 'Nucleo',
+  //   fonts: 'Geist',
+  //   colors: ['#FFFFFF', '#8A8A8F', '#070708', '#B2E071'],
+  //   title: 'Trizzy',
+  // },
+  // {
+  //   image: '/placeholder.svg?height=540&width=540',
+  //   icons: 'Nucleo',
+  //   fonts: 'SF Pro',
+  //   colors: ['#FFFFFF', '#99A1A8', '#090909'],
+  //   title: 'Trizzy',
+  // },
+  // {
+  //   image: '/placeholder.svg?height=540&width=540',
+  //   icons: 'Nucleo',
+  //   fonts: 'Geist',
+  //   colors: ['#191919', '#636363', '#D6D6D6', '#DA4167'],
+  //   title: 'Trizzy',
+  // },
+  // {
+  //   image: '/placeholder.svg?height=540&width=540',
+  //   icons: 'Nucleo',
+  //   fonts: 'Open Runde',
+  //   colors: ['#2684FC', '#DCE2EF', '#1F1F1F'],
+  //   title: 'Trizzy',
+  // },
+  // {
+  //   image: '/placeholder.svg?height=540&width=540',
+  //   icons: 'Nucleo',
+  //   fonts: 'Geist Mono',
+  //   colors: ['#09BC8A', '#F4F7F5', '#919793', '#0A0B0C'],
+  //   title: 'Trizzy',
+  // },
+  // {
+  //   image: '/placeholder.svg?height=540&width=540',
+  //   icons: 'Nucleo',
+  //   fonts: 'Inter',
+  //   colors: ['#F67E7D', '#CDD0D5', '#958CAF', '#0B032D'],
+  //   title: 'Trizzy',
+  // },
 ];

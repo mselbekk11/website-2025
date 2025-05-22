@@ -1,7 +1,7 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import { LinkIcon } from 'lucide-react';
-import ColorButton from './color-button';
+// import ColorButton from './color-button';
 
 interface ExperimentCardProps {
   id: string;
@@ -18,8 +18,8 @@ export default function ExperimentCard({
   // image,
   icons,
   fonts,
-  colors,
-}: ExperimentCardProps) {
+}: // colors,
+ExperimentCardProps) {
   return (
     <li
       id={id}
@@ -37,16 +37,20 @@ export default function ExperimentCard({
         </aside>
 
         {/* Experiment */}
-        <figure className='col-start-2 md:col-start-3 aspect-square'>
-          <Image
-            // src={image || '/bg.svg'}
-            src={'/bg.svg'}
+        <figure className='col-start-2 md:col-start-3 aspect-square relative'>
+          <div
+            className="absolute inset-0 w-full h-full bg-[url('/bg-stripes.svg')] bg-repeat opacity-100"
+            aria-hidden='true'
+          ></div>
+          {/* Optional: Keep the image but make it an overlay on the pattern */}
+          {/* <Image
+            src={'/bg-stripes.svg'}
             alt={title}
             width={540}
             height={540}
             className='w-full h-full object-cover'
             loading='lazy'
-          />
+          /> */}
         </figure>
 
         <aside
@@ -63,7 +67,7 @@ export default function ExperimentCard({
       {/* Experiment meta */}
       <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20'>
         <div className='relative col-start-2 md:col-start-3 p-6'>
-          <h2 className='mb-4 text-xl font-semibold'>{title}</h2>
+          <h2 className='mb-4 text-sm font-semibold'>{title}</h2>
 
           <ul className='space-y-3'>
             <li>
@@ -88,7 +92,7 @@ export default function ExperimentCard({
             </li>
 
             {/* Colors */}
-            <li>
+            {/* <li>
               <dl>
                 <dt className='text-white/50 mb-1'>Colors</dt>
                 <dd className='flex gap-2'>
@@ -97,7 +101,7 @@ export default function ExperimentCard({
                   ))}
                 </dd>
               </dl>
-            </li>
+            </li> */}
           </ul>
 
           {/* Link */}
