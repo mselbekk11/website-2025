@@ -63,7 +63,7 @@ export default function Home() {
               <Logo />
             </Link>
 
-            <h1 className='text-balance text-center leading-[1.4]'>
+            <h1 className='text-balance text-center leading-[1.4] text-sm'>
               Morgan Selbekk
               <span className='opacity-40 sm:block'>
                 Full Stack Developer & Designer
@@ -76,7 +76,7 @@ export default function Home() {
         <div className='hidden md:flex col-start-4 row-span-full pt-[52px] justify-center items-start z-20'>
           <Link
             href='#hire-me'
-            className='btn px-4 py-2 border border-gray-500/20 rounded-full focus:ring sticky top-[34px] mb-10 z-[3] bg-gray-500/20'
+            className='btn px-4 py-2 border border-gray-500/20 rounded-full focus:ring sticky top-[34px] mb-10 z-[3] bg-gray-500/20 text-sm'
           >
             Hire Me
           </Link>
