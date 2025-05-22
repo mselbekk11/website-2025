@@ -23,9 +23,17 @@ export default function Home() {
         <div className='md:max-w-[1104px] md:mx-auto'>
           <div className='translate-y-[-90px]'>
             <div
-              className='w-[650px] h-[320px] bg-white/25 rounded-full rotate-45 -translate-x-[300px] -translate-y-[300px] origin-left-center blur-[120px] opacity-30
-                        sm:-translate-x-[200px] sm:-translate-y-[300px] 
-                        md:-translate-x-[150px] md:-translate-y-[200px]'
+              style={{
+                width: '840px',
+                height: '480px',
+                background: 'white',
+                borderRadius: '50%',
+                transform: 'rotate(45deg) translate(-300px, -300px)',
+                transformOrigin: 'left 20%',
+                filter: 'blur(150px)',
+                opacity: 0.045,
+              }}
+              className='sm:[transform:rotate(45deg)_translate(-200px,-300px)] md:[transform:rotate(45deg)_translate(-150px,-200px)]'
             ></div>
             {/* Additional light element for more effect */}
             {/* <div className='w-[600px] h-[180px] bg-blue-200/20 rounded-full rotate-[30deg] -translate-x-[250px] -translate-y-[350px] origin-left-center blur-[140px] opacity-40'></div> */}
