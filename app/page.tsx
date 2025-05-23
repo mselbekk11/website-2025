@@ -241,7 +241,7 @@ export default function Home() {
 
 const experiments = [
   {
-    image: '/T-9.png',
+    image: '/T-11.png',
     title: 'Trizzy',
     description: 'AI application to virtually try on clothes',
   },
