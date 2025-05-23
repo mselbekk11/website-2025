@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import ExperimentCard from '@/app/components/experiment-card';
 import Logo from '@/app/components/logo';
-import PatternBackground from '@/app/components/pattern-background';
+// import PatternBackground from '@/app/components/pattern-background';
 import LogoOne from './components/logo-one';
 
 export default function Home() {
@@ -43,15 +43,15 @@ export default function Home() {
 
       <main
         id='top'
-        className='relative z-20 grid grid-cols-[24px_1fr_24px] sm:grid-cols-[1fr_33.75rem_1fr] md:grid-cols-[1fr_258px_540px_258px_1fr] md:gap-x-6 grid-rows-[24px_auto_1fr] min-h-screen'
+        className='relative z-20 grid grid-cols-[24px_1fr_24px] sm:grid-cols-[1fr_33.75rem_1fr] md:grid-cols-[1fr_228px_600px_228px_1fr] md:gap-x-6 grid-rows-[24px_auto_1fr] min-h-screen'
       >
         {/* Pattern backgrounds for outer columns */}
-        <div className='hidden md:block col-start-1 row-span-full relative'>
+        {/* <div className='hidden md:block col-start-1 row-span-full relative'>
           <PatternBackground />
-        </div>
-        <div className='hidden md:block col-start-5 row-span-full relative'>
+        </div> */}
+        {/* <div className='hidden md:block col-start-5 row-span-full relative'>
           <PatternBackground />
-        </div>
+        </div> */}
 
         {/* Desktop logo */}
         <div className='hidden md:flex col-start-2 row-span-full pt-[52px] justify-center items-start relative z-20'>

@@ -33,7 +33,7 @@ ExperimentCardProps) {
         </aside>
 
         {/* Experiment */}
-        <figure className='col-start-2 md:col-start-3 aspect-square relative'>
+        <figure className='col-start-2 md:col-start-3 h-[400px] relative'>
           <div
             className="absolute inset-0 w-full h-full bg-[url('/bg-stripes.svg')] bg-repeat opacity-100"
             aria-hidden='true'
