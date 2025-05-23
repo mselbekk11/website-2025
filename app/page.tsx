@@ -73,7 +73,7 @@ export default function Home() {
 
             <h1 className='text-balance text-center leading-[1.4] text-sm'>
               Morgan Selbekk
-              <span className='opacity-40 sm:block'>
+              <span className='text-zinc-500 sm:block'>
                 Full Stack Developer & Designer
               </span>
             </h1>
@@ -243,7 +243,7 @@ const experiments = [
   {
     image: '/placeholder.svg?height=540&width=540',
     title: 'Trizzy',
-    description: 'AI Application used to virtually try on clothes',
+    description: 'AI Application to virtually try on clothes',
   },
   {
     image: '/placeholder.svg?height=540&width=540',

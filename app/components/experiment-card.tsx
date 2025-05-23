@@ -62,19 +62,18 @@ ExperimentCardProps) {
 
       {/* Experiment meta */}
       <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20'>
-        <div className='relative col-start-2 md:col-start-3 p-6'>
-          <h2 className='mb-4 text-sm font-semibold'>{title}</h2>
-          <p className='mb-4 text-sm font-semibold'>{description}</p>
-          <ul className='space-y-3'></ul>
+        <div className='relative col-start-2 md:col-start-3 p-6 flex flex-col gap-2'>
+          <h2 className='text-sm font-semibold'>{title}</h2>
+          <p className='text-sm font-semibold text-zinc-500'>{description}</p>
 
           {/* Link */}
-          <Link
+          {/* <Link
             href={`#${id}`}
             className='experiment-link absolute top-6 right-6 focus:ring'
           >
             <LinkIcon size={18} />
             <span className='sr-only'>link</span>
-          </Link>
+          </Link> */}
         </div>
       </div>
 
