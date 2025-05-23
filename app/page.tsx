@@ -25,7 +25,7 @@ export default function Home() {
             <div
               style={{
                 width: '840px',
-                height: '480px',
+                height: '580px',
                 background: 'white',
                 borderRadius: '50%',
                 transform: 'rotate(45deg) translate(-300px, -300px)',
@@ -98,9 +98,7 @@ export default function Home() {
               id={`ui-experiment-${index + 1}`}
               title={experiment.title}
               image={experiment.image}
-              icons={experiment.icons}
-              fonts={experiment.fonts}
-              colors={experiment.colors}
+              description={experiment.description}
             />
           ))}
         </ul>
@@ -244,24 +242,18 @@ export default function Home() {
 const experiments = [
   {
     image: '/placeholder.svg?height=540&width=540',
-    icons: 'Nucleo',
-    fonts: 'Geist + Geist Mono',
-    colors: ['#111111', '#B3B3B3', '#BA965A'],
     title: 'Trizzy',
+    description: 'AI Application used to virtually try on clothes',
   },
   {
     image: '/placeholder.svg?height=540&width=540',
-    icons: 'Nucleo',
-    fonts: 'Geist Mono',
-    colors: ['#FFFFFF', '#868F9F', '#202124'],
     title: 'Trizzy',
+    description: 'AI Application used to virtually try on clothes',
   },
   {
     image: '/placeholder.svg?height=540&width=540',
-    icons: 'Nucleo',
-    fonts: 'Inter',
-    colors: ['#1A1917', '#5E5E55', '#DFDFDC', '#7A8FF7'],
     title: 'Trizzy',
+    description: 'AI Application used to virtually try on clothes',
   },
   // {
   //   image: '/placeholder.svg?height=540&width=540',

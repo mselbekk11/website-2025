@@ -7,18 +7,14 @@ interface ExperimentCardProps {
   id: string;
   title: string;
   image: string;
-  icons: string;
-  fonts: string;
-  colors: string[];
+  description: string;
 }
 
 export default function ExperimentCard({
   id,
   title,
-  // image,
-  icons,
-  fonts,
-}: // colors,
+  description,
+}: // image,
 ExperimentCardProps) {
   return (
     <li
@@ -68,41 +64,8 @@ ExperimentCardProps) {
       <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20'>
         <div className='relative col-start-2 md:col-start-3 p-6'>
           <h2 className='mb-4 text-sm font-semibold'>{title}</h2>
-
-          <ul className='space-y-3'>
-            <li>
-              <dl className='flex gap-2'>
-                <dt className='text-white/50'>Icons</dt>
-                <dd>
-                  <Link
-                    href='https://nucleoapp.com/'
-                    className='underline underline-offset-4 focus:ring'
-                  >
-                    {icons}
-                  </Link>
-                </dd>
-              </dl>
-            </li>
-
-            <li>
-              <dl className='flex gap-2'>
-                <dt className='text-white/50'>Fonts</dt>
-                <dd>{fonts}</dd>
-              </dl>
-            </li>
-
-            {/* Colors */}
-            {/* <li>
-              <dl>
-                <dt className='text-white/50 mb-1'>Colors</dt>
-                <dd className='flex gap-2'>
-                  {colors.map((color, index) => (
-                    <ColorButton key={index} color={color} />
-                  ))}
-                </dd>
-              </dl>
-            </li> */}
-          </ul>
+          <p className='mb-4 text-sm font-semibold'>{description}</p>
+          <ul className='space-y-3'></ul>
 
           {/* Link */}
           <Link
