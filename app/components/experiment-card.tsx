@@ -1,6 +1,7 @@
 // import Image from 'next/image';
 import Link from 'next/link';
 import { LinkIcon } from 'lucide-react';
+import Image from 'next/image';
 // import ColorButton from './color-button';
 
 interface ExperimentCardProps {
@@ -14,7 +15,8 @@ export default function ExperimentCard({
   id,
   title,
   description,
-}: // image,
+  image,
+}:
 ExperimentCardProps) {
   return (
     <li
@@ -39,14 +41,14 @@ ExperimentCardProps) {
             aria-hidden='true'
           ></div>
           {/* Optional: Keep the image but make it an overlay on the pattern */}
-          {/* <Image
-            src={'/bg-stripes.svg'}
+          <Image
+            src={image}
             alt={title}
             width={540}
             height={540}
             className='w-full h-full object-cover'
             loading='lazy'
-          /> */}
+          />
         </figure>
 
         <aside

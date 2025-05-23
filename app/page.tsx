@@ -241,19 +241,34 @@ export default function Home() {
 
 const experiments = [
   {
-    image: '/placeholder.svg?height=540&width=540',
+    image: '/trizzy-three.png',
     title: 'Trizzy',
-    description: 'AI Application to virtually try on clothes',
+    description: 'AI application to virtually try on clothes',
   },
   {
-    image: '/placeholder.svg?height=540&width=540',
-    title: 'Trizzy',
-    description: 'AI Application used to virtually try on clothes',
+    image: '/trizzy.png',
+    title: 'PicAI',
+    description: 'AI image generation',
   },
   {
-    image: '/placeholder.svg?height=540&width=540',
-    title: 'Trizzy',
-    description: 'AI Application used to virtually try on clothes',
+    image: '/trizzy.png',
+    title: 'Fire Icons',
+    description: 'SVG icon library',
+  },
+  {
+    image: '/trizzy.png',
+    title: 'Advanced Ortho Labs',
+    description: 'Full Stack custom website for an Orthodontic Lab',
+  },
+  {
+    image: '/trizzy.png',
+    title: 'Alkimi Labs',
+    description: 'Token staking application',
+  },
+  {
+    image: '/trizzy.png',
+    title: 'JennyCo',
+    description: 'NFT minting site',
   },
   // {
   //   image: '/placeholder.svg?height=540&width=540',
