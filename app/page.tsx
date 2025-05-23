@@ -241,32 +241,32 @@ export default function Home() {
 
 const experiments = [
   {
-    image: '/trizzy-three.png',
+    image: '/T-8.png',
     title: 'Trizzy',
     description: 'AI application to virtually try on clothes',
   },
   {
-    image: '/trizzy.png',
+    image: '/P-3.png',
     title: 'PicAI',
     description: 'AI image generation',
   },
   {
-    image: '/trizzy.png',
+    image: '/F-1.png',
     title: 'Fire Icons',
-    description: 'SVG icon library',
+    description: 'SVG icon collection',
   },
   {
-    image: '/trizzy.png',
+    image: '/P-2.png',
     title: 'Advanced Ortho Labs',
     description: 'Full Stack custom website for an Orthodontic Lab',
   },
   {
-    image: '/trizzy.png',
+    image: '/T-3.png',
     title: 'Alkimi Labs',
     description: 'Token staking application',
   },
   {
-    image: '/trizzy.png',
+    image: '/T-3.png',
     title: 'JennyCo',
     description: 'NFT minting site',
   },

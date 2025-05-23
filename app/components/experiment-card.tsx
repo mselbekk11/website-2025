@@ -1,6 +1,4 @@
 // import Image from 'next/image';
-import Link from 'next/link';
-import { LinkIcon } from 'lucide-react';
 import Image from 'next/image';
 // import ColorButton from './color-button';
 
@@ -16,8 +14,7 @@ export default function ExperimentCard({
   title,
   description,
   image,
-}:
-ExperimentCardProps) {
+}: ExperimentCardProps) {
   return (
     <li
       id={id}
@@ -40,13 +37,13 @@ ExperimentCardProps) {
             className="absolute inset-0 w-full h-full bg-[url('/bg-stripes.svg')] bg-repeat opacity-100"
             aria-hidden='true'
           ></div>
-          {/* Optional: Keep the image but make it an overlay on the pattern */}
+          {/* Image positioned above the stripes with z-index */}
           <Image
             src={image}
             alt={title}
             width={540}
             height={540}
-            className='w-full h-full object-cover'
+            className='w-full h-full object-cover relative z-10'
             loading='lazy'
           />
         </figure>
