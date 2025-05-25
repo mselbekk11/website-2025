@@ -86,7 +86,7 @@ export default function Home() {
             href='#hire-me'
             className='btn px-4 py-2 border border-gray-500/20 rounded-full focus:ring sticky top-[34px] mb-10 z-[3] bg-gray-500/20 text-sm'
           >
-            Hire Me
+            Hire Me.
           </Link>
         </div>
 
