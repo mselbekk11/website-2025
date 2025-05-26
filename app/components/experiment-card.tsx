@@ -7,6 +7,7 @@ interface ExperimentCardProps {
   title: string;
   image: string;
   description: string;
+  boom: string;
 }
 
 export default function ExperimentCard({
@@ -14,6 +15,7 @@ export default function ExperimentCard({
   title,
   description,
   image,
+  boom,
 }: ExperimentCardProps) {
   return (
     <li
@@ -34,7 +36,12 @@ export default function ExperimentCard({
         {/* Experiment */}
         <figure className='col-start-2 md:col-start-3 h-[400px] relative'>
           <div
-            className="absolute inset-0 w-full h-full bg-[url('/T-BG.svg')] bg-repeat opacity-100"
+            className='absolute inset-0 z-0'
+            style={{
+              backgroundImage: `url(${boom})`,
+              backgroundRepeat: 'repeat',
+              opacity: 1,
+            }}
             aria-hidden='true'
           ></div>
           {/* Image positioned above the stripes with z-index */}

@@ -99,6 +99,7 @@ export default function Home() {
               title={experiment.title}
               image={experiment.image}
               description={experiment.description}
+              boom={experiment.boom}
             />
           ))}
         </ul>
@@ -243,31 +244,37 @@ const experiments = [
   {
     image: '/T-11.png',
     title: 'Trizzy',
+    boom: '/T-BG.svg',
     description: 'AI application to virtually try on clothes',
   },
   {
-    image: '/P-3.png',
+    image: '/pa-2.png',
     title: 'PicAI',
+    boom: '/pa.svg',
     description: 'AI image generation',
   },
   {
-    image: '/F-1.png',
+    image: '/fi-2.png',
     title: 'Fire Icons',
+    boom: '/fi.svg',
     description: 'SVG icon collection',
   },
   {
-    image: '/P-2.png',
+    image: '/ao-2.png',
     title: 'Advanced Ortho Labs',
+    boom: '/T-BG.svg',
     description: 'Full Stack custom website for an Orthodontic Lab',
   },
   {
-    image: '/T-3.png',
+    image: '/al-2.png',
     title: 'Alkimi Labs',
+    boom: '/al.svg',
     description: 'Token staking application',
   },
   {
-    image: '/T-3.png',
+    image: '/jc-2.png',
     title: 'JennyCo',
+    boom: '/jc.svg',
     description: 'NFT minting site',
   },
   // {
