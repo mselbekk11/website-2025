@@ -131,94 +131,115 @@ export default function Home() {
 
       <footer
         id='hire-me'
-        className='bg-[#fafafa] text-[#0A0A0A] relative z-20 grid grid-cols-[24px_1fr_24px] sm:grid-cols-[1fr_33.75rem_1fr] md:grid-cols-[1fr_258px_540px_258px_1fr] md:gap-x-6 min-h-screen'
+        className='bg-[#fafafa] text-[#0A0A0A] relative z-20 grid grid-cols-[24px_1fr_24px] sm:grid-cols-[1fr_33.75rem_1fr] md:grid-cols-[1fr_228px_600px_228px_1fr] md:gap-x-6 min-h-screen'
       >
         <div className='col-span-full row-span-full grid grid-cols-subgrid'>
           {/* Pattern backgrounds for outer columns */}
-          <div className='hidden md:block col-start-1 row-span-full relative'>
+          {/* <div className='hidden md:block col-start-1 row-span-full relative'>
             <div
               className="absolute inset-0 w-full h-full bg-[url('/bg-stripes.png')] bg-repeat opacity-20 pointer-events-none"
               aria-hidden='true'
             ></div>
-          </div>
-          <div className='hidden md:block col-start-5 row-span-full relative'>
+          </div> */}
+          {/* <div className='hidden md:block col-start-5 row-span-full relative'>
             <div
               className="absolute inset-0 w-full h-full bg-[url('/bg-stripes.png')] bg-repeat opacity-20 pointer-events-none"
               aria-hidden='true'
             ></div>
-          </div>
+          </div> */}
 
           {/* Content */}
-          <div className='col-span-full grid grid-cols-subgrid my-auto border-y border-dashed border-gray-500/20'>
+          <div className='col-span-full grid grid-cols-subgrid my-auto border-y border-dashed border-gray-400/20'>
             <aside
-              className='hidden md:block md:col-start-2'
+              className='hidden md:block md:col-start-2 relative'
               aria-hidden='true'
-            ></aside>
+            >
+              <div
+                className="absolute inset-0 w-full h-full bg-[url('/bg-stripes-dark.svg')] bg-repeat opacity-100 pointer-events-none"
+                aria-hidden='true'
+              ></div>
+            </aside>
 
             <div className='col-start-2 md:col-start-3 flex flex-col gap-4 p-6'>
-              <h2 className='text-sm font-bold leading-tight'>
-                Lets work together
-              </h2>
-              <p className='opacity-50 font-normal text-sm'>
-                Want your web app to be more than just good? I can help turn it
-                into a delightful experience for your users.
-              </p>
-
-              <h3 className='text-sm font-semibold mt-4 leading-tight'>
-                Pricing
-              </h3>
-              <ul className='text-[#0A0A0A]/50 font-normal flex flex-col gap-1.5 list-inside text-sm'>
-                <li>$150/h (or full project quote)</li>
-                <li>2h/day (Mon-Fri GMT+1)</li>
-                <li>
-                  Web app design (
-                  <Link
-                    className='text-[#0A0A0A] font-medium underline underline-offset-4'
-                    href='https://www.figma.com'
-                    target='_blank'
-                  >
-                    Examples
-                  </Link>
-                  )
-                </li>
-                <li>Design implementation support*</li>
-              </ul>
-
-              <p className='opacity-50 font-normal text-sm'>
-                *Rather than just delivering a Figma file, I can join your
-                developer in coding the UI.
-              </p>
-
-              <div className='show-if-available'>
-                <h3 className='text-sm font-semibold mt-4 leading-tight'>
-                  Start here:
-                </h3>
-                <p>
-                  <span className='opacity-50 font-normal sm'>Email me at</span>{' '}
-                  <Link
-                    href="mailto:se.guerriero@gmail.com?subject=Let's%20work%20together"
-                    className='underline underline-offset-4 text-sm'
-                  >
-                    se.guerriero@gmail.com
-                  </Link>
+              <div className='flex flex-col gap-2'>
+                <h2 className='text-sm font-semibold leading-tight'>About</h2>
+                <p className='opacity-50 text-sm'>
+                  Hello, I'm Morgan Selbekk, a full stack developer and designer
+                  based in San Francisco with over eight years of hands-on
+                  experience in E-commerce and Blockchain. I am passionate about
+                  crafting web products that are not only visually compelling
+                  but also highly functional and user-centric.
                 </p>
-                <p>
-                  <span className='opacity-50 font-normal text-sm'>Or</span>{' '}
-                  <Link
-                    href='https://cal.com'
-                    className='underline underline-offset-4 text-sm'
-                  >
-                    book a 15m intro call
-                  </Link>
-                  .
-                </p>
+              </div>
+
+              <div className='flex flex-col gap-2'>
+                <h2 className='text-sm font-semibold mt-4 leading-tight'>
+                  Connect
+                </h2>
+                <div>
+                  {' '}
+                  <p>
+                    <span className='opacity-50 text-sm'>Email:</span>{' '}
+                    <Link
+                      href='mailto:mselbekk11@gmail.com'
+                      className='underline underline-offset-4 text-sm'
+                    >
+                      mselbekk11@gmail.com
+                    </Link>
+                  </p>
+                  <p>
+                    <span className='opacity-50 text-sm'>X:</span>{' '}
+                    <Link
+                      href='https://x.com/mselbekk1'
+                      target='_blank'
+                      className='underline underline-offset-4 text-sm'
+                    >
+                      @mselbekk1
+                    </Link>
+                  </p>
+                  <p>
+                    <span className='opacity-50 text-sm'>Github:</span>{' '}
+                    <Link
+                      href='https://github.com/mselbekk11'
+                      target='_blank'
+                      className='underline underline-offset-4 text-sm'
+                    >
+                      mselbekk11
+                    </Link>
+                  </p>
+                  <p>
+                    <span className='opacity-50 text-sm'>LinkedIn:</span>{' '}
+                    <Link
+                      href='https://www.linkedin.com/in/morgan-selbekk/'
+                      target='_blank'
+                      className='underline underline-offset-4 text-sm'
+                    >
+                      in/morgan-selbekk
+                    </Link>
+                  </p>
+                  <p>
+                    <span className='opacity-50 text-sm'>Resume:</span>{' '}
+                    <Link
+                      href='/Morgan-Selbekk-Resume.pdf'
+                      download='Morgan-Selbekk-Resume.pdf'
+                      className='underline underline-offset-4 text-sm'
+                    >
+                      Download
+                    </Link>
+                  </p>
+                </div>
               </div>
             </div>
 
             <aside
-              className='hidden md:block md:col-start-4'
+              className='hidden md:block md:col-start-4 relative'
               aria-hidden='true'
-            ></aside>
+            >
+              <div
+                className="absolute inset-0 w-full h-full bg-[url('/bg-stripes-dark.svg')] bg-repeat opacity-100 pointer-events-none"
+                aria-hidden='true'
+              ></div>
+            </aside>
           </div>
         </div>
 
