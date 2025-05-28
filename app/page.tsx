@@ -164,7 +164,7 @@ export default function Home() {
               <div className='flex flex-col gap-2'>
                 <h2 className='text-sm font-semibold leading-tight'>About</h2>
                 <p className='opacity-50 text-sm'>
-                  Hello, I'm Morgan Selbekk, a full stack developer and designer
+                  Hello, Im Morgan Selbekk, a full stack developer and designer
                   based in San Francisco with over eight years of hands-on
                   experience in E-commerce and Blockchain. I am passionate about
                   crafting web products that are not only visually compelling
