@@ -1,5 +1,6 @@
 // import Image from 'next/image';
 import Image from 'next/image';
+import Link from 'next/link';
 // import ColorButton from './color-button';
 
 interface ExperimentCardProps {
@@ -8,6 +9,7 @@ interface ExperimentCardProps {
   image: string;
   description: string;
   boom: string;
+  PageLink: string;
 }
 
 export default function ExperimentCard({
@@ -16,6 +18,7 @@ export default function ExperimentCard({
   description,
   image,
   boom,
+  PageLink,
 }: ExperimentCardProps) {
   return (
     <li
@@ -34,27 +37,28 @@ export default function ExperimentCard({
         </aside>
 
         {/* Experiment */}
-        <figure className='col-start-2 md:col-start-3 h-[400px] relative'>
-          <div
-            className='absolute inset-0 z-0'
-            style={{
-              backgroundImage: `url(${boom})`,
-              backgroundRepeat: 'repeat',
-              opacity: 1,
-            }}
-            aria-hidden='true'
-          ></div>
-          {/* Image positioned above the stripes with z-index */}
-          <Image
-            src={image}
-            alt={title}
-            width={540}
-            height={540}
-            className='w-full h-full object-cover relative z-10'
-            loading='lazy'
-          />
-        </figure>
-
+        <Link href={PageLink}>
+          <figure className='col-start-2 md:col-start-3 h-[400px] relative'>
+            <div
+              className='absolute inset-0 z-0'
+              style={{
+                backgroundImage: `url(${boom})`,
+                backgroundRepeat: 'repeat',
+                opacity: 1,
+              }}
+              aria-hidden='true'
+            ></div>
+            {/* Image positioned above the stripes with z-index */}
+            <Image
+              src={image}
+              alt={title}
+              width={540}
+              height={540}
+              className='w-full h-full object-cover relative z-10'
+              loading='lazy'
+            />
+          </figure>
+        </Link>
         <aside
           className='hidden md:block md:col-start-4 relative'
           aria-hidden='true'

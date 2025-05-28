@@ -9,14 +9,15 @@ export default function Home() {
     <PageLayout>
       {/* Experiments */}
       <ul className='col-span-full grid grid-cols-subgrid'>
-        {projectData.map((experiment, index) => (
+        {projectData.map((projectData, index) => (
           <ExperimentCard
             key={index}
-            id={`ui-experiment-${index + 1}`}
-            title={experiment.title}
-            image={experiment.image}
-            description={experiment.description}
-            boom={experiment.boom}
+            id={projectData.id}
+            title={projectData.title}
+            image={projectData.image}
+            description={projectData.description}
+            boom={projectData.boom}
+            PageLink={projectData.PageLink}
           />
         ))}
       </ul>

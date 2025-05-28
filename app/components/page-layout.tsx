@@ -92,7 +92,7 @@ export default function PageLayout({ children }: PageLayoutProps) {
         </div>
 
         {/* Main content area */}
-        <div className='col-span-full grid grid-cols-subgrid row-start-3'>
+        <div className='col-span-full grid grid-cols-subgrid row-start-3 self-start'>
           {children}
         </div>
 

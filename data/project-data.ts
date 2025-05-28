@@ -5,6 +5,23 @@ export const projectData = [
     title: 'Trizzy',
     boom: '/T-BG.svg',
     description: 'AI application to virtually try on clothes',
+    first: 'Trizzy.ai is a full stack AI application where you can train models on your own images using Flux AI and then try on outfits by uploading images of clothing.',
+    second: 'This project uses the Astria API which uses Flux AI to train the models and items of clothing. This app allows users to try on outfits before buying. Some of the benefits of using Trizzy are things like; style experimentation, reduced returns, time saving and cuts down on waste.',
+    stack: [
+      { name: 'HTML' },
+      { name: 'CSS' },
+      { name: 'React' },
+      { name: 'Typescript' },
+      { name: 'Next.js' },
+      { name: 'Convex' },
+      { name: 'Tailwind' },
+      { name: 'Astria AI' },
+      { name: 'Flux AI' },
+      { name: 'Stripe' },
+      { name: 'Uploadthing' },
+    ],
+    website: 'https://trizzy.ai',
+    PageLink: '/trizzy',
   },
   {
     id: 'picai',
@@ -12,6 +29,7 @@ export const projectData = [
     title: 'PicAI',
     boom: '/pa.svg',
     description: 'AI image generation',
+    PageLink: '/picai',
   },
   {
     id: 'fire-icons',
@@ -19,6 +37,7 @@ export const projectData = [
     title: 'Fire Icons',
     boom: '/fi.svg',
     description: 'SVG icon collection',
+    PageLink: '/fire-icons',
   },
   {
     id: 'advanced-ortho-labs',
@@ -26,6 +45,7 @@ export const projectData = [
     title: 'Advanced Ortho Labs',
     boom: '/T-BG.svg',
     description: 'Full Stack custom website for an Orthodontic Lab',
+    PageLink: '/advanced-ortho-labs',
   },
   {
     id: 'alkimi-labs',
@@ -33,6 +53,7 @@ export const projectData = [
     title: 'Alkimi Labs',
     boom: '/al.svg',
     description: 'Token staking application',
+    PageLink: '/alkimi-labs',
   },
   {
     id: 'jennyco',
@@ -40,56 +61,8 @@ export const projectData = [
     title: 'JennyCo',
     boom: '/jc.svg',
     description: 'NFT minting site',
+    PageLink: '/jennyco',
   },
-  // {
-  //   image: '/placeholder.svg?height=540&width=540',
-  //   icons: 'Nucleo',
-  //   fonts: 'Geist',
-  //   colors: ['#F9F5FF', '#19181B', '#EE4169'],
-  //   title: 'Trizzy',
-  // },
-  // {
-  //   image: '/placeholder.svg?height=540&width=540',
-  //   icons: 'Nucleo',
-  //   fonts: 'Geist',
-  //   colors: ['#FFFFFF', '#8A8A8F', '#070708', '#B2E071'],
-  //   title: 'Trizzy',
-  // },
-  // {
-  //   image: '/placeholder.svg?height=540&width=540',
-  //   icons: 'Nucleo',
-  //   fonts: 'SF Pro',
-  //   colors: ['#FFFFFF', '#99A1A8', '#090909'],
-  //   title: 'Trizzy',
-  // },
-  // {
-  //   image: '/placeholder.svg?height=540&width=540',
-  //   icons: 'Nucleo',
-  //   fonts: 'Geist',
-  //   colors: ['#191919', '#636363', '#D6D6D6', '#DA4167'],
-  //   title: 'Trizzy',
-  // },
-  // {
-  //   image: '/placeholder.svg?height=540&width=540',
-  //   icons: 'Nucleo',
-  //   fonts: 'Open Runde',
-  //   colors: ['#2684FC', '#DCE2EF', '#1F1F1F'],
-  //   title: 'Trizzy',
-  // },
-  // {
-  //   image: '/placeholder.svg?height=540&width=540',
-  //   icons: 'Nucleo',
-  //   fonts: 'Geist Mono',
-  //   colors: ['#09BC8A', '#F4F7F5', '#919793', '#0A0B0C'],
-  //   title: 'Trizzy',
-  // },
-  // {
-  //   image: '/placeholder.svg?height=540&width=540',
-  //   icons: 'Nucleo',
-  //   fonts: 'Inter',
-  //   colors: ['#F67E7D', '#CDD0D5', '#958CAF', '#0B032D'],
-  //   title: 'Trizzy',
-  // },
 ];
 
 // Utility function to get project data by ID

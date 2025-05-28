@@ -2,23 +2,27 @@
 import Image from 'next/image';
 // import ColorButton from './color-button';
 
-interface ExperimentCardProps {
+interface PageCardProps {
   id: string;
   title: string;
   image: string;
-  description: string;
+  first: string;
+  second: string;
+  stack: { name: string }[];
   boom: string;
 }
 
 export default function PageCard({
   id,
   title,
-  description,
   image,
   boom,
-}: ExperimentCardProps) {
+  first,
+  second,
+  stack,
+}: PageCardProps) {
   return (
-    <li
+    <div
       id={id}
       className='col-span-full grid grid-cols-subgrid border-b border-dashed border-gray-500/20'
     >
@@ -66,20 +70,29 @@ export default function PageCard({
         </aside>
       </div>
 
-      {/* Experiment meta */}
+      {/* Project Description */}
+      <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20'>
+        <div className='relative col-start-2 md:col-start-3 p-6 flex flex-col gap-4'>
+          {/* <h2 className='text-sm font-semibold'>{title}</h2> */}
+          {/* <p className='text-sm font-semibold text-zinc-500'>{description}</p> */}
+          <p className='text-xs text-zinc-300'>{first}</p>
+          <p className='text-xs text-zinc-300'>{second}</p>
+        </div>
+      </div>
+
+      {/* Project Stack */}
       <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20'>
         <div className='relative col-start-2 md:col-start-3 p-6 flex flex-col gap-2'>
-          <h2 className='text-sm font-semibold'>{title}</h2>
-          <p className='text-sm font-semibold text-zinc-500'>{description}</p>
-
-          {/* Link */}
-          {/* <Link
-            href={`#${id}`}
-            className='experiment-link absolute top-6 right-6 focus:ring'
-          >
-            <LinkIcon size={18} />
-            <span className='sr-only'>link</span>
-          </Link> */}
+          <div className='flex flex-wrap gap-3 w-full text-xs text-zinc-300'>
+            {stack.map((item, index) => (
+              <div
+                key={index}
+                className='border py-2 px-4 border-gray-500/20'
+              >
+                {item.name}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -87,6 +100,6 @@ export default function PageCard({
         className='col-span-full h-6 border-t border-dashed border-gray-500/20'
         aria-hidden='true'
       ></div>
-    </li>
+    </div>
   );
 }

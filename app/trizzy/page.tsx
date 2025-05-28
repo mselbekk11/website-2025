@@ -18,6 +18,9 @@ export default function Trizzy() {
         image={projectData.image}
         description={projectData.description}
         boom={projectData.boom}
+        first={projectData.first}
+        second={projectData.second}
+        stack={projectData.stack}
       />
     </PageLayout>
   );
