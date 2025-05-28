@@ -84,9 +84,9 @@ export default function Home() {
         <div className='hidden md:flex col-start-4 row-span-full pt-[52px] justify-center items-start z-20'>
           <Link
             href='#hire-me'
-            className='btn px-4 py-2 border border-gray-500/20 rounded-full focus:ring sticky top-[34px] mb-10 z-[3] bg-gray-500/20 text-sm'
+            className='btn px-4 py-2 border border-gray-500/20 rounded-full sticky top-[34px] mb-10 z-[3] bg-gray-500/20 text-xs'
           >
-            Hire Me.
+            Hire Me
           </Link>
         </div>
 
