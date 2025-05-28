@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import ExperimentCard from '@/app/components/experiment-card';
 import Logo from '@/app/components/logo';
@@ -5,6 +7,17 @@ import Logo from '@/app/components/logo';
 import LogoOne from './components/logo-one';
 
 export default function Home() {
+  const scrollToHireMe = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const hireMeSection = document.getElementById('hire-me');
+    if (hireMeSection) {
+      hireMeSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <div className='min-h-screen bg-[#0D0D0D] text-white relative'>
       {/* Background noise effect */}
@@ -84,6 +97,7 @@ export default function Home() {
         <div className='hidden md:flex col-start-4 row-span-full pt-[52px] justify-center items-start z-20'>
           <Link
             href='#hire-me'
+            onClick={scrollToHireMe}
             className='btn px-4 py-2 border border-gray-500/20 rounded-full sticky top-[34px] mb-10 z-[3] bg-gray-500/20 text-xs'
           >
             Hire Me
@@ -142,18 +156,18 @@ export default function Home() {
             ></aside>
 
             <div className='col-start-2 md:col-start-3 flex flex-col gap-4 p-6'>
-              <h2 className='text-3xl font-bold leading-tight'>
+              <h2 className='text-sm font-bold leading-tight'>
                 Lets work together
               </h2>
-              <p className='opacity-50 font-normal'>
+              <p className='opacity-50 font-normal text-sm'>
                 Want your web app to be more than just good? I can help turn it
                 into a delightful experience for your users.
               </p>
 
-              <h3 className='text-xl font-semibold mt-4 leading-tight'>
+              <h3 className='text-sm font-semibold mt-4 leading-tight'>
                 Pricing
               </h3>
-              <ul className='text-[#0A0A0A]/50 font-normal flex flex-col gap-1.5 list-inside'>
+              <ul className='text-[#0A0A0A]/50 font-normal flex flex-col gap-1.5 list-inside text-sm'>
                 <li>$150/h (or full project quote)</li>
                 <li>2h/day (Mon-Fri GMT+1)</li>
                 <li>
@@ -170,47 +184,29 @@ export default function Home() {
                 <li>Design implementation support*</li>
               </ul>
 
-              <p className='opacity-50 font-normal'>
+              <p className='opacity-50 font-normal text-sm'>
                 *Rather than just delivering a Figma file, I can join your
                 developer in coding the UI.
               </p>
 
-              <div className='show-if-not-available hidden'>
-                <h3 className='text-xl font-semibold mt-4 leading-tight'>
-                  Future collaborations
-                </h3>
-                <p>
-                  <span className='opacity-50 font-normal'>Email me at</span>{' '}
-                  <Link
-                    href="mailto:se.guerriero@gmail.com?subject=Notify%20me%20when%20you're%20booking%20new%20projects"
-                    className='underline underline-offset-4'
-                  >
-                    se.guerriero@gmail.com
-                  </Link>{' '}
-                  <span className='opacity-50 font-normal'>
-                    and Ill notify you when Im booking new projects.
-                  </span>
-                </p>
-              </div>
-
               <div className='show-if-available'>
-                <h3 className='text-xl font-semibold mt-4 leading-tight'>
+                <h3 className='text-sm font-semibold mt-4 leading-tight'>
                   Start here:
                 </h3>
                 <p>
-                  <span className='opacity-50 font-normal'>Email me at</span>{' '}
+                  <span className='opacity-50 font-normal sm'>Email me at</span>{' '}
                   <Link
                     href="mailto:se.guerriero@gmail.com?subject=Let's%20work%20together"
-                    className='underline underline-offset-4'
+                    className='underline underline-offset-4 text-sm'
                   >
                     se.guerriero@gmail.com
                   </Link>
                 </p>
                 <p>
-                  <span className='opacity-50 font-normal'>Or</span>{' '}
+                  <span className='opacity-50 font-normal text-sm'>Or</span>{' '}
                   <Link
                     href='https://cal.com'
-                    className='underline underline-offset-4'
+                    className='underline underline-offset-4 text-sm'
                   >
                     book a 15m intro call
                   </Link>
