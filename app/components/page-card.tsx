@@ -15,8 +15,8 @@ interface PageCardProps {
 
 export default function PageCard({
   id,
-  title,
-  image,
+  // title,
+  // image,
   boom,
   first,
   second,
@@ -40,8 +40,8 @@ export default function PageCard({
         </aside>
 
         {/* Experiment */}
-        <figure className='col-start-2 md:col-start-3 h-[400px] relative'>
-          <div
+        <figure className='col-start-2 md:col-start-3 relative'>
+          {/* <div
             className='absolute inset-0 z-0'
             style={{
               backgroundImage: `url(${boom})`,
@@ -49,7 +49,7 @@ export default function PageCard({
               opacity: 1,
             }}
             aria-hidden='true'
-          ></div>
+          ></div> */}
           {/* Image positioned above the stripes with z-index */}
           {/* <Image
             src={image}
@@ -59,7 +59,9 @@ export default function PageCard({
             className='w-full h-full object-cover relative z-10'
             loading='lazy'
           /> */}
-          <div className='flex justify-center items-center h-full relative z-10'>{video}</div>
+          <div className='flex justify-center items-center h-full relative z-10'>
+            {video}
+          </div>
         </figure>
 
         <aside
@@ -75,17 +77,17 @@ export default function PageCard({
 
       {/* Project Description */}
       <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20'>
-        <div className='relative col-start-2 md:col-start-3 p-6 flex flex-col gap-4'>
+        <div className='relative col-start-2 md:col-start-3 p-4 flex flex-col gap-4'>
           {/* <h2 className='text-sm font-semibold'>{title}</h2> */}
           {/* <p className='text-sm font-semibold text-zinc-500'>{description}</p> */}
-          <p className='text-xs text-zinc-300'>{first}</p>
-          <p className='text-xs text-zinc-300'>{second}</p>
+          <p className='text-sm text-zinc-300'>{first}</p>
+          <p className='text-sm text-zinc-300'>{second}</p>
         </div>
       </div>
 
       {/* Project Stack */}
       <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20'>
-        <div className='relative col-start-2 md:col-start-3 p-6 flex flex-col gap-2'>
+        <div className='relative col-start-2 md:col-start-3 p-4 flex flex-col gap-2'>
           <div className='flex flex-wrap gap-3 w-full text-xs text-zinc-300'>
             {stack.map((item, index) => (
               <div key={index} className='border py-2 px-4 border-gray-500/20'>
@@ -95,11 +97,6 @@ export default function PageCard({
           </div>
         </div>
       </div>
-
-      <div
-        className='col-span-full h-6 border-t border-dashed border-gray-500/20'
-        aria-hidden='true'
-      ></div>
     </div>
   );
 }
