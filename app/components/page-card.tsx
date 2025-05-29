@@ -1,5 +1,5 @@
 // import Image from 'next/image';
-import Image from 'next/image';
+// import Image from 'next/image';
 // import ColorButton from './color-button';
 
 interface PageCardProps {
@@ -10,6 +10,7 @@ interface PageCardProps {
   second: string;
   stack: { name: string }[];
   boom: string;
+  video: React.ReactNode;
 }
 
 export default function PageCard({
@@ -20,6 +21,7 @@ export default function PageCard({
   first,
   second,
   stack,
+  video,
 }: PageCardProps) {
   return (
     <div
@@ -49,14 +51,15 @@ export default function PageCard({
             aria-hidden='true'
           ></div>
           {/* Image positioned above the stripes with z-index */}
-          <Image
+          {/* <Image
             src={image}
             alt={title}
             width={540}
             height={540}
             className='w-full h-full object-cover relative z-10'
             loading='lazy'
-          />
+          /> */}
+          <div className='flex justify-center items-center h-full relative z-10'>{video}</div>
         </figure>
 
         <aside
@@ -85,10 +88,7 @@ export default function PageCard({
         <div className='relative col-start-2 md:col-start-3 p-6 flex flex-col gap-2'>
           <div className='flex flex-wrap gap-3 w-full text-xs text-zinc-300'>
             {stack.map((item, index) => (
-              <div
-                key={index}
-                className='border py-2 px-4 border-gray-500/20'
-              >
+              <div key={index} className='border py-2 px-4 border-gray-500/20'>
                 {item.name}
               </div>
             ))}

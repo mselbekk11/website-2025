@@ -21,6 +21,7 @@ export default function Trizzy() {
         first={projectData.first}
         second={projectData.second}
         stack={projectData.stack}
+        video={projectData.video}
       />
     </PageLayout>
   );
