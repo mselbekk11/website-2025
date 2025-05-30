@@ -55,7 +55,7 @@ export default function PageLayout({ children }: PageLayoutProps) {
 
       <main
         id='top'
-        className='relative z-20 grid grid-cols-[24px_1fr_24px] sm:grid-cols-[1fr_33.75rem_1fr] md:grid-cols-[1fr_228px_600px_228px_1fr] md:gap-x-6 grid-rows-[24px_auto_1fr] min-h-screen'
+        className='relative z-20 grid grid-cols-[24px_1fr_24px] sm:grid-cols-[1fr_33.75rem_1fr] md:grid-cols-[1fr_178px_700px_178px_1fr] md:gap-x-6 grid-rows-[24px_auto_1fr] min-h-screen'
       >
         {/* Desktop logo */}
         <div className='hidden md:flex col-start-2 row-span-full pt-[52px] justify-center items-start relative z-20'>
