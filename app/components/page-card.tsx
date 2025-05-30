@@ -86,11 +86,18 @@ export default function PageCard({
       </div>
 
       {/* Project Stack */}
-      <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20'>
+      <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20 relative'>
         <div className='relative col-start-2 md:col-start-3 p-4 flex flex-col gap-2'>
-          <div className='flex flex-wrap gap-3 w-full text-xs text-zinc-300'>
+          <div
+            className="absolute inset-0 w-full h-full bg-[url('/bg-stripes.svg')] bg-repeat opacity-100 pointer-events-none"
+            aria-hidden='true'
+          ></div>
+          <div className='flex flex-wrap gap-3 w-full text-xs text-zinc-300 relative z-10'>
             {stack.map((item, index) => (
-              <div key={index} className='border py-2 px-4 border-gray-500/20'>
+              <div
+                key={index}
+                className='border py-2 px-4 border-gray-500/20 bg-[#0D0D0D]'
+              >
                 {item.name}
               </div>
             ))}
