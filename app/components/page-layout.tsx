@@ -131,7 +131,9 @@ export default function PageLayout({ children }: PageLayoutProps) {
 
             <div className='col-start-2 md:col-start-3 flex flex-col gap-4 p-6'>
               <div className='flex flex-col gap-2'>
-                <TextScramble className='text-sm font-semibold leading-tight'>About</TextScramble>
+                <TextScramble className='text-sm font-semibold leading-tight'>
+                  About
+                </TextScramble>
                 <TextScramble className='opacity-50 text-sm'>
                   Hello, Im Morgan Selbekk, a full stack developer and designer
                   based in San Francisco with over eight years of hands-on
@@ -146,7 +148,74 @@ export default function PageLayout({ children }: PageLayoutProps) {
                   Connect
                 </TextScramble>
                 <div>
-                  <p>
+                  <div className='flex flex-col gap-2'>
+                    <div className='flex text-sm'>
+                      <TextScramble className='opacity-50 text-sm'>
+                        Email:
+                      </TextScramble>
+                      <Link
+                        href='mailto:mselbekk11@gmail.com'
+                        className='underline underline-offset-4 text-sm'
+                        target='_blank'
+                      >
+                        <TextScramble>mselbekk11@gmail.com</TextScramble>
+                      </Link>
+                    </div>
+
+                    <div className='flex text-sm'>
+                      <TextScramble className='opacity-50 text-sm'>
+                        X:
+                      </TextScramble>
+                      <Link
+                        href='https://x.com/mselbekk1'
+                        className='underline underline-offset-4 text-sm'
+                        target='_blank'
+                      >
+                        <TextScramble>@mselbekk1</TextScramble>
+                      </Link>
+                    </div>
+
+                    <div className='flex text-sm'>
+                      <TextScramble className='opacity-50 text-sm'>
+                        Github:
+                      </TextScramble>
+                      <Link
+                        href='https://github.com/mselbekk11'
+                        className='underline underline-offset-4 text-sm'
+                        target='_blank'
+                      >
+                        <TextScramble>mselbekk11</TextScramble>
+                      </Link>
+                    </div>
+
+                    <div className='flex text-sm'>
+                      <TextScramble className='opacity-50 text-sm'>
+                        LinkedIn:
+                      </TextScramble>
+                      <Link
+                        href='https://www.linkedin.com/in/morgan-selbekk/'
+                        className='underline underline-offset-4 text-sm'
+                        target='_blank'
+                      >
+                        <TextScramble>in/morgan-selbekk</TextScramble>
+                      </Link>
+                    </div>
+
+                    <div className='flex text-sm'>
+                      <TextScramble className='opacity-50 text-sm'>
+                        Resume:
+                      </TextScramble>
+                      <Link
+                        href='/Morgan-Selbekk-Resume.pdf'
+                        download='Morgan-Selbekk-Resume.pdf'
+                        className='underline underline-offset-4 text-sm'
+                      >
+                        <TextScramble>Download</TextScramble>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* <p>
                     <span className='opacity-50 text-sm'>Email:</span>{' '}
                     <Link
                       href='mailto:mselbekk11@gmail.com'
@@ -154,8 +223,8 @@ export default function PageLayout({ children }: PageLayoutProps) {
                     >
                       mselbekk11@gmail.com
                     </Link>
-                  </p>
-                  <p>
+                  </p> */}
+                  {/* <p>
                     <span className='opacity-50 text-sm'>X:</span>{' '}
                     <Link
                       href='https://x.com/mselbekk1'
@@ -164,8 +233,8 @@ export default function PageLayout({ children }: PageLayoutProps) {
                     >
                       @mselbekk1
                     </Link>
-                  </p>
-                  <p>
+                  </p> */}
+                  {/* <p>
                     <span className='opacity-50 text-sm'>Github:</span>{' '}
                     <Link
                       href='https://github.com/mselbekk11'
@@ -174,8 +243,8 @@ export default function PageLayout({ children }: PageLayoutProps) {
                     >
                       mselbekk11
                     </Link>
-                  </p>
-                  <p>
+                  </p> */}
+                  {/* <p>
                     <span className='opacity-50 text-sm'>LinkedIn:</span>{' '}
                     <Link
                       href='https://www.linkedin.com/in/morgan-selbekk/'
@@ -184,8 +253,8 @@ export default function PageLayout({ children }: PageLayoutProps) {
                     >
                       in/morgan-selbekk
                     </Link>
-                  </p>
-                  <p>
+                  </p> */}
+                  {/* <p>
                     <span className='opacity-50 text-sm'>Resume:</span>{' '}
                     <Link
                       href='/Morgan-Selbekk-Resume.pdf'
@@ -194,7 +263,7 @@ export default function PageLayout({ children }: PageLayoutProps) {
                     >
                       Download
                     </Link>
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
