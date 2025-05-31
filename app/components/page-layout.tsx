@@ -4,6 +4,7 @@ import Link from 'next/link';
 import LogoOne from './logo-one';
 import Title from './title';
 import VisitWebsite from './visit-website';
+import { TextScramble } from '@/components/motion-primitives/text-scramble';
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -130,20 +131,20 @@ export default function PageLayout({ children }: PageLayoutProps) {
 
             <div className='col-start-2 md:col-start-3 flex flex-col gap-4 p-6'>
               <div className='flex flex-col gap-2'>
-                <h2 className='text-sm font-semibold leading-tight'>About</h2>
-                <p className='opacity-50 text-sm'>
+                <TextScramble className='text-sm font-semibold leading-tight'>About</TextScramble>
+                <TextScramble className='opacity-50 text-sm'>
                   Hello, Im Morgan Selbekk, a full stack developer and designer
                   based in San Francisco with over eight years of hands-on
                   experience in E-commerce and Blockchain. I am passionate about
                   crafting web products that are not only visually compelling
                   but also highly functional and user-centric.
-                </p>
+                </TextScramble>
               </div>
 
               <div className='flex flex-col gap-2'>
-                <h2 className='text-sm font-semibold mt-4 leading-tight'>
+                <TextScramble className='text-sm font-semibold mt-4 leading-tight'>
                   Connect
-                </h2>
+                </TextScramble>
                 <div>
                   <p>
                     <span className='opacity-50 text-sm'>Email:</span>{' '}
