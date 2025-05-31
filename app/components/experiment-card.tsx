@@ -42,7 +42,7 @@ export default function ExperimentCard({
           href={PageLink}
           className='col-start-2 col-end-3 md:col-start-3 md:col-end-4'
         >
-          <figure className='h-[400px] relative'>
+          <figure className='md:h-[400px] relative'>
             <div
               className='absolute inset-0 z-0'
               style={{

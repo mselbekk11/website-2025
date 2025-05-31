@@ -70,7 +70,7 @@ export default function PageLayout({ children }: PageLayoutProps) {
         {/* Mobile header */}
         <header className='col-span-full grid grid-cols-subgrid border-y border-dashed border-gray-500/20 row-start-2 md:h-[100px]'>
           <div className='col-start-2 md:col-start-3 flex flex-col md:justify-center items-center gap-4 p-6'>
-            <Link href='/' className='md:hidden sticky top-[33px]'>
+            <Link href='/' className='md:hidden'>
               <LogoOne />
             </Link>
 
@@ -93,7 +93,9 @@ export default function PageLayout({ children }: PageLayoutProps) {
           >
             Hire Me
           </Link> */}
-          <VisitWebsite scrollToHireMe={scrollToHireMe} />
+          <div className='sticky top-[34px] z-[3]'>
+            <VisitWebsite scrollToHireMe={scrollToHireMe} />
+          </div>
         </div>
 
         {/* Main content area */}
