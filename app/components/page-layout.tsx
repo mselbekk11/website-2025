@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import LogoOne from './logo-one';
+import Title from './title';
+import VisitWebsite from './visit-website';
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -71,24 +73,26 @@ export default function PageLayout({ children }: PageLayoutProps) {
               <LogoOne />
             </Link>
 
-            <h1 className='text-balance text-center leading-[1.4] text-sm'>
+            {/* <h1 className='text-balance text-center leading-[1.4] text-sm'>
               Morgan Selbekk
               <span className='text-zinc-500 sm:block'>
                 Full Stack Developer & Designer
               </span>
-            </h1>
+            </h1> */}
+            <Title />
           </div>
         </header>
 
         {/* Desktop CTA */}
         <div className='hidden md:flex col-start-4 row-span-full pt-[52px] justify-center items-start z-20'>
-          <Link
+          {/* <Link
             href='#hire-me'
             onClick={scrollToHireMe}
             className='btn px-4 py-2 border border-gray-500/20 rounded-full sticky top-[34px] mb-10 z-[3] bg-gray-500/20 text-xs'
           >
             Hire Me
-          </Link>
+          </Link> */}
+          <VisitWebsite scrollToHireMe={scrollToHireMe} />
         </div>
 
         {/* Main content area */}
@@ -109,7 +113,7 @@ export default function PageLayout({ children }: PageLayoutProps) {
 
       <footer
         id='hire-me'
-        className='bg-[#fafafa] text-[#0A0A0A] relative z-20 grid grid-cols-[24px_1fr_24px] sm:grid-cols-[1fr_33.75rem_1fr] md:grid-cols-[1fr_228px_600px_228px_1fr] md:gap-x-6 min-h-screen'
+        className='bg-[#fafafa] text-[#0A0A0A] relative z-20 grid grid-cols-[24px_1fr_24px] sm:grid-cols-[1fr_33.75rem_1fr] md:grid-cols-[1fr_178px_700px_178px_1fr] md:gap-x-6 min-h-screen'
       >
         <div className='col-span-full row-span-full grid grid-cols-subgrid'>
           {/* Content */}
