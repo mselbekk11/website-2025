@@ -82,10 +82,8 @@ export default function PageCard({
         <div className='relative col-start-2 md:col-start-3 p-4 flex flex-col gap-4'>
           {/* <h2 className='text-sm font-semibold'>{title}</h2> */}
           {/* <p className='text-sm font-semibold text-zinc-500'>{description}</p> */}
-          <TextScramble className='text-sm text-zinc-300'>{first}</TextScramble>
-          <TextScramble className='text-sm text-zinc-300'>
-            {second}
-          </TextScramble>
+          <div className='text-sm text-zinc-300'>{first}</div>
+          <div className='text-sm text-zinc-300'>{second}</div>
         </div>
       </div>
 
@@ -98,12 +96,12 @@ export default function PageCard({
           ></div>
           <div className='flex flex-wrap gap-3 w-full text-xs text-zinc-300 relative z-10'>
             {stack.map((item, index) => (
-              <TextScramble
+              <div
                 key={index}
                 className='border py-2 px-4 border-gray-500/20 bg-[#0D0D0D]'
               >
                 {item.name}
-              </TextScramble>
+              </div>
             ))}
           </div>
         </div>
