@@ -1,6 +1,7 @@
 // import Image from 'next/image';
 import Image from 'next/image';
 import Link from 'next/link';
+import { TextScramble } from '@/components/motion-primitives/text-scramble';
 // import ColorButton from './color-button';
 
 interface ExperimentCardProps {
@@ -76,8 +77,10 @@ export default function ExperimentCard({
       {/* Experiment meta */}
       <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20'>
         <div className='relative col-start-2 col-end-3 md:col-start-3 md:col-end-4 p-6 flex flex-col gap-2'>
-          <h2 className='text-sm font-semibold'>{title}</h2>
-          <p className='text-sm font-semibold text-zinc-500'>{description}</p>
+          <TextScramble className='text-sm font-semibold'>{title}</TextScramble>
+          <TextScramble className='text-sm font-semibold text-zinc-500'>
+            {description}
+          </TextScramble>
 
           {/* Link */}
           {/* <Link

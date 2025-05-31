@@ -1,6 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import { TextScramble } from '@/components/motion-primitives/text-scramble';
 
 export default function Title() {
   const pathname = usePathname();
@@ -41,10 +42,12 @@ export default function Title() {
 
   return (
     <div>
-      <h1 className='text-balance text-center leading-[1.4] text-sm'>
+      <TextScramble className='text-balance text-center leading-[1.4] text-sm'>
         {heading}
-        <span className='text-zinc-500 sm:block'>{subheading}</span>
-      </h1>
+      </TextScramble>
+      <TextScramble className='text-zinc-500 sm:block text-sm'>
+        {subheading}
+      </TextScramble>
     </div>
   );
 }
