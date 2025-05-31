@@ -37,8 +37,11 @@ export default function ExperimentCard({
         </aside>
 
         {/* Experiment */}
-        <Link href={PageLink}>
-          <figure className='col-start-2 md:col-start-3 h-[400px] relative'>
+        <Link
+          href={PageLink}
+          className='col-start-2 col-end-3 md:col-start-3 md:col-end-4'
+        >
+          <figure className='h-[400px] relative'>
             <div
               className='absolute inset-0 z-0'
               style={{
@@ -72,7 +75,7 @@ export default function ExperimentCard({
 
       {/* Experiment meta */}
       <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20'>
-        <div className='relative col-start-2 md:col-start-3 p-6 flex flex-col gap-2'>
+        <div className='relative col-start-2 col-end-3 md:col-start-3 md:col-end-4 p-6 flex flex-col gap-2'>
           <h2 className='text-sm font-semibold'>{title}</h2>
           <p className='text-sm font-semibold text-zinc-500'>{description}</p>
 
