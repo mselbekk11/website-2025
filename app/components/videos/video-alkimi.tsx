@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function VideoTrizzy() {
+export default function VideoAlkimi() {
   return (
     <video
       // width='100%'
@@ -11,7 +11,7 @@ export default function VideoTrizzy() {
       playsInline
       className=''
     >
-      <source src='https://res.cloudinary.com/dtjasyr7k/video/upload/v1745953297/Trizzy-v3_noogom.mp4' />
+      <source src='https://res.cloudinary.com/dtjasyr7k/video/upload/v1706134105/Morgans_video_2_v2pshf.mp4' />
       Your browser does not support the video tag.
     </video>
   );

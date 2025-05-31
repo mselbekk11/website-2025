@@ -1,4 +1,9 @@
-import VideoFour from '../app/components/videos/video-trizzy';
+import VideoTrizzy from '../app/components/videos/video-trizzy';
+import VideoPicAI from '../app/components/videos/video-picai';
+import VideoFireIcons from '../app/components/videos/video-fireicons';
+import VideoAOL from '../app/components/videos/video-aol';
+import VideoAlkimi from '../app/components/videos/video-alkimi';
+import VideoJennyCo from '../app/components/videos/video-jco';
 
 export const projectData = [
   {
@@ -24,7 +29,7 @@ export const projectData = [
     ],
     website: 'https://trizzy.ai',
     PageLink: '/trizzy',
-    video: <VideoFour />,
+    video: <VideoTrizzy />,
   },
   {
     id: 'picai',
@@ -48,7 +53,7 @@ export const projectData = [
     ],
     website: 'https://www.picai.so/',
     PageLink: '/picai',
-    video: <VideoFour />,
+    video: <VideoPicAI />,
   },
   {
     id: 'fire-icons',
@@ -69,7 +74,7 @@ export const projectData = [
     ],
     website: 'https://www.fireicons.io/',
     PageLink: '/fire-icons',
-    video: <VideoFour />,
+    video: <VideoFireIcons />,
   },
   {
     id: 'advanced-ortho-labs',
@@ -94,7 +99,7 @@ export const projectData = [
     ],
     website: 'https://www.advancedortholabsf.com/',
     PageLink: '/advanced-ortho-labs',
-    video: <VideoFour />,
+    video: <VideoAOL />,
   },
   {
     id: 'alkimi-labs',
@@ -119,7 +124,7 @@ export const projectData = [
     ],
     website: 'https://labs.alkimi.org/',
     PageLink: '/alkimi-labs',
-    video: <VideoFour />,
+    video: <VideoAlkimi />,
   },
   {
     id: 'jennyco',
@@ -146,7 +151,7 @@ export const projectData = [
     ],
     website: 'https://www.jennyco.io/',
     PageLink: '/jennyco',
-    video: <VideoFour />,
+    video: <VideoJennyCo />,
   },
 ];
 
