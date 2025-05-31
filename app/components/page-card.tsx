@@ -2,7 +2,7 @@
 // import Image from 'next/image';
 // import ColorButton from './color-button';
 
-import { TextScramble } from '@/components/motion-primitives/text-scramble';
+// import { TextScramble } from '@/components/motion-primitives/text-scramble';
 
 interface PageCardProps {
   id: string;
