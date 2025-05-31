@@ -17,7 +17,7 @@ export default function PageCard({
   id,
   // title,
   // image,
-  boom,
+  // boom,
   first,
   second,
   stack,

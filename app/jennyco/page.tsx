@@ -3,8 +3,8 @@ import PageLayout from '../components/page-layout';
 import { getProjectById } from '../../data/project-data';
 import { notFound } from 'next/navigation';
 
-export default function Trizzy() {
-  const projectData = getProjectById('trizzy');
+export default function JennyCo() {
+  const projectData = getProjectById('jennyco');
 
   if (!projectData) {
     notFound();
