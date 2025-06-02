@@ -2,6 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import { TextScramble } from '@/components/motion-primitives/text-scramble';
+import ScrambleText from './scramble-text';
 
 export default function Title() {
   const pathname = usePathname();
@@ -41,13 +42,11 @@ export default function Title() {
       : 'Full Stack Developer & Designer';
 
   return (
-    <div>
-      <TextScramble className='text-balance text-center leading-[1.4] text-sm'>
-        {heading}
-      </TextScramble>
-      <TextScramble className='text-zinc-500 sm:block text-sm'>
-        {subheading}
-      </TextScramble>
+    <div className='flex flex-col text-center text-sm'>
+      <ScrambleText text={heading} />
+      <div className='text-zinc-500'>
+        <ScrambleText text={subheading} />
+      </div>
     </div>
   );
 }

@@ -82,8 +82,8 @@ export default function PageCard({
         <div className='relative col-start-2 md:col-start-3 p-4 flex flex-col gap-4'>
           {/* <h2 className='text-sm font-semibold'>{title}</h2> */}
           {/* <p className='text-sm font-semibold text-zinc-500'>{description}</p> */}
-          <div className='text-sm text-zinc-300'>{first}</div>
-          <div className='text-sm text-zinc-300'>{second}</div>
+          <div className='text-sm text-zinc-300 font-normal'>{first}</div>
+          <div className='text-sm text-zinc-300 font-normal'>{second}</div>
         </div>
       </div>
 
