@@ -118,6 +118,8 @@ export default function PageCard({
           </div>
         </div>
       </div>
+      {/* <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20 relative'></div> */}
+      <div className='col-span-full h-6 border-t border-dashed border-gray-500/20'></div>
     </div>
   );
 }
