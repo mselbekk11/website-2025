@@ -11,7 +11,7 @@ export default function ScrambleText({ text }: { text: string }) {
     const interval = setInterval(() => {
       setTrigger(false);
       setTimeout(() => setTrigger(true), 100);
-    }, 4000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);

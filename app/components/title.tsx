@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { TextScramble } from '@/components/motion-primitives/text-scramble';
+// import { TextScramble } from '@/components/motion-primitives/text-scramble';
 import ScrambleText from './scramble-text';
 
 export default function Title() {
