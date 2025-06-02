@@ -1,6 +1,7 @@
 // import Image from 'next/image';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import { TextScramble } from '@/components/motion-primitives/text-scramble';
 // import ColorButton from './color-button';
 
@@ -21,6 +22,8 @@ export default function ExperimentCard({
   boom,
   PageLink,
 }: ExperimentCardProps) {
+  const [isHovering, setIsHovering] = useState(false);
+
   return (
     <li
       id={id}
@@ -76,21 +79,26 @@ export default function ExperimentCard({
 
       {/* Experiment meta */}
       <div className='col-span-full grid grid-cols-subgrid border-t border-dashed border-gray-500/20'>
-        <div className='relative col-start-2 col-end-3 md:col-start-3 md:col-end-4 p-6 flex flex-col'>
-          <TextScramble className='text-sm font-normal'>{title}</TextScramble>
-          <TextScramble className='text-sm font-normal text-zinc-500'>
-            {description}
-          </TextScramble>
-
-          {/* Link */}
-          {/* <Link
-            href={`#${id}`}
-            className='experiment-link absolute top-6 right-6 focus:ring'
+        <Link
+          href={PageLink}
+          className='col-start-2 col-end-3 md:col-start-3 md:col-end-4'
+        >
+          <div
+            className='relative col-start-2 col-end-3 md:col-start-3 md:col-end-4 p-6 flex flex-col cursor-pointer'
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
           >
-            <LinkIcon size={18} />
-            <span className='sr-only'>link</span>
-          </Link> */}
-        </div>
+            <TextScramble className='text-sm font-normal' trigger={isHovering}>
+              {title}
+            </TextScramble>
+            <TextScramble
+              className='text-sm font-normal text-zinc-500'
+              trigger={isHovering}
+            >
+              {description}
+            </TextScramble>
+          </div>
+        </Link>
       </div>
 
       <div
