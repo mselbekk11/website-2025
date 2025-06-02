@@ -7,6 +7,8 @@
 interface PageCardProps {
   id: string;
   title: string;
+  description: string;
+  website: string;
   image: string;
   first: string;
   second: string;
@@ -17,7 +19,9 @@ interface PageCardProps {
 
 export default function PageCard({
   id,
-  // title,
+  title,
+  description,
+  website,
   // image,
   // boom,
   first,
