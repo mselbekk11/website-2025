@@ -2,6 +2,8 @@
 // import Image from 'next/image';
 // import ColorButton from './color-button';
 
+import Link from 'next/link';
+
 // import { TextScramble } from '@/components/motion-primitives/text-scramble';
 
 interface PageCardProps {
@@ -86,6 +88,12 @@ export default function PageCard({
         <div className='relative col-start-2 md:col-start-3 p-4 flex flex-col gap-4'>
           {/* <h2 className='text-sm font-semibold'>{title}</h2> */}
           {/* <p className='text-sm font-semibold text-zinc-500'>{description}</p> */}
+          <div className='flex flex-col gap-2 md:hidden'>
+            <Link href={website} target='_blank'>
+              <h2 className='text-sm font-semibold underline'>{title}</h2>
+            </Link>
+            <p className='text-sm font-semibold text-zinc-500'>{description}</p>
+          </div>
           <div className='text-sm text-zinc-300 font-normal'>{first}</div>
           <div className='text-sm text-zinc-300 font-normal'>{second}</div>
         </div>

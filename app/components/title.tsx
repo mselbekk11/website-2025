@@ -41,8 +41,13 @@ export default function Title() {
       ? 'NFT minting site'
       : 'Full Stack Developer & Designer';
 
+  // Create a class that hides the component on mobile for non-root pages
+  const mobileVisibilityClass = pathname === '/' ? '' : 'hidden md:block';
+
   return (
-    <div className='flex flex-col text-center text-sm'>
+    <div
+      className={`flex flex-col text-center text-sm ${mobileVisibilityClass}`}
+    >
       <ScrambleText text={heading} />
       <div className='text-zinc-500'>
         <ScrambleText text={subheading} />

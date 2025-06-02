@@ -15,6 +15,8 @@ export default function JennyCo() {
       <PageCard
         id={projectData.id}
         title={projectData.title}
+        description={projectData.description}
+        website={projectData.website}
         image={projectData.image}
         boom={projectData.boom}
         first={projectData.first}
