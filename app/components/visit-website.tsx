@@ -23,7 +23,7 @@ export default function VisitWebsite({
       ? 'https://www.advancedortholabsf.com/'
       : pathname === '/alkimi-labs'
       ? 'https://labs.alkimi.org/'
-      : pathname === '/jenny-co'
+      : pathname === '/jennyco'
       ? 'https://www.jennyco.io/'
       : '#hire-me';
 
